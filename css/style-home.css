@@ -1,0 +1,24 @@
+.box-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image{
+    max-width: 50rem;
+}
+
+.banner-text{
+    text-align: start;
+    margin-left: 2rem;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-top: -2rem;
+    transition: color 1s;
+    color: #1d1d1d;
+}
+
+.banner-text.active{
+    color: #0d6efd;
+}
