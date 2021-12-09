@@ -1,9 +1,9 @@
 @media only screen and (max-width: 900px) {
-    .navbar {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .btn-login{
-        margin-top: 1rem;
-    }
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
   }
+  .btn-login {
+    margin-top: 1rem;
+  }
+}

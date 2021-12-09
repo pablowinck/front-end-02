@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-mobile.css" />
     <link rel="stylesheet" href="css/style-home.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <!---->
 
     <!--external css-->
@@ -44,80 +45,108 @@
     <!---->
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <img class="navbar-brand logo mr-auto" src="svg/WinterPrise.svg" />
-        <div class="d-flex">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body" id="navbarNavDropdown">
-              <ul class="navbar-nav menu">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >início</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">sobre nós</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">trabalhe conosco</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">fale conosco</a>
-                </li>
-              </ul>
-              <button type="button" class="btn-login btn btn-outline-primary">
-                login
-              </button>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <img class="navbar-brand logo mr-auto" src="svg/WinterPrise.svg" />
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body" id="navbarNavDropdown">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >início</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">trabalhe conosco</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">fale conosco</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn-login btn btn-outline-primary">
+                  login
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="box-container">
-      <div
-        class="
-          container-fluid
-          d-flex
-          justify-content-center
-          flex-row
-          align-items-center
-        "
-      >
-        <img class="banner-image" src="png/aviao-banner.png" />
-        <div class="d-flex flex-column">
-          <span id="text1" class="banner-text active"> encurtando</span>
-          <span id="text2" class="banner-text">seus</span>
-          <span id="text3" class="banner-text">sonhos</span>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="box-container d-flex flex-column justify-content-center">
+          <div
+            class="
+              container-fluid
+              d-flex
+              justify-content-center
+              flex-row
+              align-items-center
+            "
+          >
+            <picture>
+              <img class="banner-image" src="png/aviao-banner.png" />
+            </picture>
+            <div class="d-flex flex-column">
+              <span id="text1" class="banner-text active"> encurtando</span>
+              <span id="text2" class="banner-text">seus</span>
+              <span id="text3" class="banner-text">sonhos</span>
+            </div>
+          </div>
+          <div class="d-flex w-100 justify-content-center box-btn-saibamais">
+            <button type="button" class="btn btn-outline-primary btn-saibamais">
+              saiba mais
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section>
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+        teste <br />
+      </section>
+    </main>
 
     <!-- internal js -->
     <script src="js/home.js"></script>
+    <script src="js/header.js"></script>
     <!---->
   </body>
 </html>

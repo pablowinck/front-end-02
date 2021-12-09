@@ -1,24 +1,40 @@
-.box-container{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+.box-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(white, rgb(206, 206, 206)),
+    url("../png/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: hard-light;
 }
 
-.banner-image{
-    max-width: 50rem;
+.banner-image {
+  max-width: 50rem;
 }
 
-.banner-text{
-    text-align: start;
-    margin-left: 2rem;
-    font-weight: 800;
-    font-size: 4rem;
-    margin-top: -2rem;
-    transition: color 1s;
-    color: #1d1d1d;
+.banner-text {
+  text-align: start;
+  margin-left: 2rem;
+  font-weight: 800;
+  font-size: 4rem;
+  margin-top: -2rem;
+  transition: color 1s;
+  color: #1d1d1d;
 }
 
-.banner-text.active{
-    color: #0d6efd;
+.banner-text.active {
+  color: var(--primary-color);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+
+.box-btn-saibamais {
+  margin-top: 10rem;
+}
+
+.btn-saibamais {
+  width: 10rem;
+  height: 3rem;
+  font-weight: 300 !important;
+  font-size: 1.3rem !important;
+  transition: background-color 0.5s !important;
 }
